@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='index.css'>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class='navbar navbar-expand-sm navbar-dark' style='background-color:blue'>
+            <ul class='navbar-nav ml-auto'>
+                <li class='navname'>Portfolio</li>
+                <li class='nav-item'><a href='#about' class='navlink'>About Me</a></li>
+                <li class='nav-item'><a href='#projects' class='navlink'>My Projects</a></li>
+                <li class='nav-item'><a href='#contact' class='navlink'>Contact Me</a></li>
+            </ul>
+        </div>
+        <div class='container-fluid title-container'>
+            <div class='title'>
+                <h1 class='myname'>Sam Abel:
+                    <br>Junior Developer</h1> 
+            </div>
+            <!-- <div class='portfoliopic'>
+                    <img class ='hotstuff'src='https://files.slack.com/files-pri/TNUP68VK9-FQYEZFP4Y/samuelabel2.jpg'>
+            </div> -->
+        </div>
+    </header>
+
+    <div class='aboutme-container'>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-6">
+                    <h1 class='abouttitle' id='about'>About Me</h1>
+                <p> I started off programming when I was a sophmore in highschool. Every year I took at least one class related to anything computers and coding. I joined up with our robotics team and became a part of the programming team where I helped build the code for our robot which won 3rd place my senior year.
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    I graduated early my senior year in December 2018 and almost immediatley began college for software development at IVY tech but after 1 semester I decided to go to Eleven Fifty Academy.
+                </p>
+
+            </div>
+            <div class='col-md-6'>
+               <br>
+                <img class='robotics'height='200'width='200' src='https://pbs.twimg.com/profile_images/634003453866606592/YrqjfNMm.png'>
+                <br>
+                <br>
+                <img class='elevenfifty'src='https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/4987/s200/elevenfifty-icon-500x500.png'>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+<div class='project-image'>
+    <div class='container'>
+    <h2 class='title-projects' id='projects'>My Projects</h2>
+    <br>
+    <br>
+    <br>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="../projectimages/tutorialscrnshot.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tutorial Page</h5>
+                  <p class="card-text">A simple tutorial page outlining some basics in JavaScript with links to other pages.</p>
+                  <a href="https://samuel-abel.github.io/Tutorial-Webiste/" class="btn btn-primary">Open in Browser</a>
+                </div>
+              </div>
+
+
+              <div class="card" style="width: 18rem;">
+                <img src="../projectimages/cssCreature.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CSS Creature</h5>
+                  <p class="card-text">Creature designed with only CSS.</p>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <a href="https://codepen.io/sabel5614/pen/gOOgGvM" class="btn btn-primary">Open in Code Pen</a>
+                </div>
+              </div>
+
+
+              <div class="card" style="width: 18rem;">
+                <img src="../projectimages/api.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">API Project</h5>
+                  <p class="card-text">A code generator API project.</p>
+                  <br>
+                  <br>
+                  <br>
+                  <a href="https://quote-generator-15bb2.firebaseapp.com/" class="btn btn-primary">Open in Browser</a>
+                </div>
+              </div>
+        </div>
+       </div>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <div class='contact-image'>
+    <div class='container'>
+            <h1 class='contact-title' id='contact'>Contact Me</h1>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message"
+                        placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+                        required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
